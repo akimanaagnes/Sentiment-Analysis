@@ -31,6 +31,8 @@ The sentiment labels were generated from the star ratings:
 | 3 stars | Neutral |
 | 4–5 stars | Positive |
 
+**Note:** The dataset is not included in this public GitHub repository. Download the original dataset from Kaggle and place it inside the `dataset/` folder before running the preprocessing scripts.
+
 ## 3. Technologies Used
 
 - Python
@@ -73,15 +75,10 @@ Logistic Regression was selected as the final model based on its higher Macro F1
 ## 6. Project Structure
 
 ```text
-Sentiment_Analysis/
-│
-├── dataset/
-│   ├── Cell_Phones_and_Accessories_5.json
-│   └── processed_reviews.csv
-│
-├── notebooks/
+Sentiment-Analysis/
 │
 ├── src/
+│   ├── __init__.py
 │   ├── inspect_dataset.py
 │   ├── preprocessing.py
 │   ├── explore_data.py
@@ -102,13 +99,15 @@ Sentiment_Analysis/
 └── .gitignore
 ```
 
+The `dataset/` folder is used locally for the original and processed datasets but is excluded from the public repository.
+
 ## 7. Installation and Usage
 
 ### Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd Sentiment_Analysis
+git clone https://github.com/akimanaagnes/Sentiment-Analysis.git
+cd Sentiment-Analysis
 ```
 
 ### Create a virtual environment
@@ -134,6 +133,8 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+**Note:** The trained model and vectorizer are already included in the repository, so you do not need to retrain the model to run the application.
 
 ## 8. Application Features
 
