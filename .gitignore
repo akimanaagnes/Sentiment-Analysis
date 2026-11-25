@@ -1,0 +1,24 @@
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Original large dataset
+dataset/Cell_Phones_and_Accessories_5.json
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+dataset/processed_reviews.csv

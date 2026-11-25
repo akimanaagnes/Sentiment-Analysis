@@ -1,0 +1,3 @@
+Model,Accuracy,Macro F1-score
+Logistic Regression,0.787909994336028,0.6575855768522558
+Multinomial Naive Bayes,0.8182894804592966,0.5309208046204273
